@@ -9,3 +9,10 @@
     object-fit: cover;
     margin: 0.1rem;
 }
+
+@media only screen and (orientation: portrait) {
+
+    .imgGaleria {
+        width: 45vw;
+    }    
+}
