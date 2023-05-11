@@ -8,7 +8,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: contrast(100%) grayscale(50%) brightness(70%);
+    filter: contrast(100%) grayscale(50%) brightness(75%);
 }
 
 .headerContTitulo {
@@ -29,6 +29,7 @@
 
 .headerTitulo {
     font-size: 3.5rem;
+    font-weight: 500;
 }
 
 .lineaSeparadora {
