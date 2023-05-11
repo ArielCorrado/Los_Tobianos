@@ -1,0 +1,11 @@
+.galeria {
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+.imgGaleria {
+    width: 15rem;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    margin: 0.1rem;
+}

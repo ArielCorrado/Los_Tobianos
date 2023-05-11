@@ -1,0 +1,158 @@
+.contMenu {
+    position: fixed;
+    width: 100%;
+    height: var(--alto-navbar);
+    top: 0;
+    left: 0;
+    background-color: var(--color-navbar);
+    z-index: 200;
+    border-bottom: var(--borders-style);
+}
+
+.tapaMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 250;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    z-index: 260;
+}
+
+.opcion {
+    font-size: 1rem;
+    font-weight: 200;
+    height: 100%;
+    padding: 0 1.5rem;
+    color: var(--color-letras-navbar);
+}
+
+.opcion:hover {
+    color: var(--color-web-1);
+}
+
+.navBarTelefono {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 3rem;
+    height: 100%;
+    font-size: 1.25rem;
+}
+
+.navBarTelefono span {
+    font-weight: 200;
+}
+
+.navBarTelefono549 {
+    color: var(--color-web-1);
+}
+
+.navBarContLogo {
+    position: absolute;
+    height: 100%;
+    left: 2rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 270;
+}
+
+.iconoMenu {
+    position: absolute;
+    height: 70%;
+    right: 2rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    filter: invert(100%);
+    display: none;
+    cursor: pointer;
+    z-index: 270;
+}
+
+.navBarLogo {
+    height: 90%;
+    filter: invert(100%);
+}
+
+
+/******************************** Clases que se cargan dinamicamente desde el javascript del navbar al superar o bajar de ciertos REM ******************************************/
+
+.iconoMenuON {
+    display: flex;
+}
+
+.menuOFF {
+    display: none;
+}
+
+.menuBaja {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: var(--alto-navbar);
+    left: 0;
+    flex-direction: column;
+    z-index: 190;
+    height: fit-content;
+    background-color: var(--color-navbar);
+    animation-name: menuBaja;
+    animation-duration: 0.35s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    border-top: 1px solid rgb(51, 51, 51);
+}
+
+@keyframes menuBaja {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.menuSube {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: var(--alto-navbar);
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    z-index: 190;
+    height: fit-content;
+    background-color: var(--color-navbar);
+    animation-name: menuSube;
+    animation-duration: 0.35s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    border-top: 1px solid rgb(51, 51, 51);
+}
+
+@keyframes menuSube {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.opcion2 {
+    padding: 1rem 0;
+    width: 100%;
+    font-weight: 400;
+}
+
+.opcion2:hover {
+    color: var(--color-web-1);
+}
+
