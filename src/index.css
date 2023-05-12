@@ -67,4 +67,9 @@ body {
     }
 }
 
-
+.OoS {
+    opacity: 0;
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}

@@ -1,8 +1,33 @@
-import { useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { useEffect} from "react";
+import { Link, useLocation } from 'react-router-dom';
 import "./navBar.css";
 
 const NavBar = () => {
+
+    /*************************************************************** OoS *******************************************************************/
+
+    const thisLocation = useLocation();
+
+    useEffect(() => {
+        const elements = document.getElementsByClassName("OoS");            //Para que al cargar la página se produzca el efecto de OoS (Opacity on Scroll) sin hacer scroll
+        setTimeout(() => {
+            for (const element of elements) {                                       
+                if (element.getBoundingClientRect().top < window.innerHeight) {     
+                    element.style.opacity = 1;
+                };
+            };
+        }, 100);
+        window.addEventListener("scroll", () => {
+            for (const element of elements) {
+                if (element.getBoundingClientRect().top < window.innerHeight) { //Efecto opacity on scroll
+                    element.style.opacity = 1;
+                };
+            };
+        });
+    }, [thisLocation]);    
+
+    /****************************************************************************************************************************************/
+
     
     useEffect(() => {
         const iconoMenu = document.querySelector(".iconoMenu");
