@@ -73,6 +73,12 @@
     }
 }
 
+.imgZoom {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .zoomGaleriaClose {
     position: absolute;
     height: 3rem;
@@ -80,13 +86,6 @@
     top: 0.5rem;
     right: 0.5rem;
     cursor: pointer;
-}
-
-
-.imgZoom {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 @media only screen and (orientation: portrait) {
