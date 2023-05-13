@@ -1,0 +1,51 @@
+.losTobianosTexto {
+    font-size: 1rem;
+}
+
+.contTextoYfotosTobianos {
+    width: 100%;
+}
+
+.filaLosTobianos {
+    width: 100%;
+}
+
+.divTextoTobianos {
+    width: 50%;
+    min-height: 50vh;
+    height: fit-content;    
+    padding: 2rem;
+}
+
+.textoTobianos {
+    line-height: 1.75;
+}
+
+.divImagenTobianos {
+    width: 50%;
+    height: 100%;  
+}
+
+.imgTobianos {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (orientation: portrait) {
+    .divTextoTobianos, .divImagenTobianos {
+        width: 100%;
+    }
+
+    .divTextoTobianos {
+        min-height: fit-content;
+    }
+
+    .divImagenTobianos {
+        max-height: 50vh;
+    }
+
+    .filaLosTobianos {
+        flex-wrap: wrap;
+    }
+}

@@ -6,9 +6,9 @@ const Header = () => {
         <div className='header'>
             <img src="/images/frente.jpg" alt="Los Tobianos Frente" className='headerImg'/>
             <div className='headerContTitulo flex column'>
-                <h1 className='headerTitulo'>Los Tobianos</h1>
-                <img src="/images/line.png" alt="linea" className='lineaSeparadora'/>
-                <h2 className='headerSubTitulo'>Una experiencia de hospedaje exclusivo en un lugar único</h2>
+                <h1 className='headerTitulo OoS'>Los Tobianos</h1>
+                <img src="/images/line.png" alt="linea" className='lineaSeparadora OoS'/>
+                <h2 className='headerSubTitulo OoS'>Una experiencia de hospedaje exclusivo en un lugar único</h2>
             </div>
         </div>
     );

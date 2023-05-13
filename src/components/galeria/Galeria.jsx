@@ -31,8 +31,8 @@ const Galeria = () => {
     }, []);
   
     return (
-        <>
-            <h2 className='titulosSecciones'>Galería</h2>
+        <div className='contSecciones seccionGaleria'>
+            <h2 className='titulosSecciones OoS'>Galería</h2>
 
             {imageZoom}
 
@@ -52,7 +52,7 @@ const Galeria = () => {
                 <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/los_tobianos_galeria_3.jpg" alt="Los Tobianos Galería" /></div>
             </div>
 
-        </>
+        </div>
     );
 }
 

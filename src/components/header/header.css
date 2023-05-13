@@ -42,4 +42,18 @@
     letter-spacing: 0.35rem;
     font-weight: 400;
     word-spacing: 0.50rem;
+    animation-name: delaySubtitulo;
+    animation-duration: 1.25s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.75s;
+}
+
+@keyframes delaySubtitulo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

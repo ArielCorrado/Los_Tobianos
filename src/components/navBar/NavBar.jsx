@@ -13,14 +13,21 @@ const NavBar = () => {
         setTimeout(() => {
             for (const element of elements) {                                       
                 if (element.getBoundingClientRect().top < window.innerHeight) {     
-                    element.style.opacity = 1;
+                    element.classList.add("OoSS");
+                    if (element.getAttribute("class").includes("titulosSecciones")) {
+                        element.classList.add("fadeInTitulos");
+                    }
                 };
             };
         }, 100);
         window.addEventListener("scroll", () => {
             for (const element of elements) {
                 if (element.getBoundingClientRect().top < window.innerHeight) { //Efecto opacity on scroll
-                    element.style.opacity = 1;
+                    element.classList.add("OoSS");
+                    element.classList.add("OoSS");
+                    if (element.getAttribute("class").includes("titulosSecciones")) {
+                        element.classList.add("fadeInTitulos");
+                    }
                 };
             };
         });
@@ -64,7 +71,7 @@ const NavBar = () => {
         const calcularREM = () => {
             if (window.innerWidth >= window.innerHeight) REM = 0.01 * window.innerHeight + 10;
             if (window.innerWidth < window.innerHeight) REM = 0.01 * window.innerWidth + 10;
-            breakPoint = 80 * REM;
+            breakPoint = 60 * REM;
         }
          
         calcularREM();
@@ -113,14 +120,10 @@ const NavBar = () => {
             <img className="iconoMenu" src="/images/menu.png" alt="Icono Menu" name="iconoMenu"/>
             <div className="tapaMenu"></div>
             <div className="menu flex" name="menu">
-                <Link className="opcion flex" href="/">Inicio</Link>
-                <Link className="opcion flex" href="/">Sobre LT</Link>
-                <Link className="opcion flex" href="/">Habitaciones</Link>
+                <Link className="opcion flex" href="/">Home</Link>
                 <Link className="opcion flex" href="/">Galería</Link>
                 <Link className="opcion flex" href="/">Actividades</Link>
                 <Link className="opcion flex" href="/">Tarifas y reservas</Link>
-                <Link className="opcion flex" href="/">Ubicación</Link>
-                <Link className="opcion flex" href="/">Testimonios</Link>
                 <Link className="opcion flex" href="/">Contacto</Link>
             </div>
         </div>

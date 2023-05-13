@@ -49,6 +49,10 @@ a {
     flex-wrap: wrap;
 }
 
+.invert {
+    flex-direction: row-reverse;
+}
+
 body {
     position: relative;
     width: 100%;
@@ -69,7 +73,20 @@ body {
 
 .OoS {
     opacity: 0;
-    transition: all;
-    transition-duration: 1s;
-    transition-timing-function: linear;
+}
+
+.OoSS {
+    animation-name: OoS;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes OoS {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

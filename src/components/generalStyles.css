@@ -1,8 +1,38 @@
 .titulosSecciones {
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 200;
     text-transform: uppercase;
-    margin-top: 4rem;
+    margin-top: 8rem;
     margin-bottom: 3rem;
     color: var(--color-web-2);
+    
+}
+
+.fadeInTitulos {
+    animation-name: fadeInTitulos;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fadeInTitulos {
+    0% {
+        transform: translateY(1.75rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+.contSecciones {
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }

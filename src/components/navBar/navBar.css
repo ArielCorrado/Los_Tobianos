@@ -28,7 +28,7 @@
     font-size: 1rem;
     font-weight: 200;
     height: 100%;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
     color: var(--color-letras-navbar);
 }
 
@@ -98,7 +98,7 @@
     position: fixed;
     width: 100%;
     top: var(--alto-navbar);
-    left: 0;
+    right: 0;
     flex-direction: column;
     z-index: 190;
     height: fit-content;
@@ -112,10 +112,10 @@
 
 @keyframes menuBaja {
     0% {
-        transform: translateY(-100%);
+        transform: translateX(100%);
     }
     100% {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
@@ -124,8 +124,7 @@
     position: fixed;
     width: 100%;
     top: var(--alto-navbar);
-    top: 0;
-    left: 0;
+    right: 0;
     flex-direction: column;
     z-index: 190;
     height: fit-content;
@@ -139,20 +138,40 @@
 
 @keyframes menuSube {
     0% {
-        transform: translateY(0);
+        transform: translateX(0);
     }
     100% {
-        transform: translateY(-100%);
+        transform: translateX(100%);
     }
 }
 
 .opcion2 {
     padding: 0.85rem 0;
+    padding-left: 3rem;
     width: 100%;
     font-weight: 400;
+    justify-content: flex-start;
 }
 
 .opcion2:hover {
     color: var(--color-web-1);
+    animation-name: rightMove;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
 
+@keyframes rightMove {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(1.5rem);
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .menuSube, .menuBaja {
+        width: 50%;
+    }
+}
