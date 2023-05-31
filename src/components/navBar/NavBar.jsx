@@ -115,7 +115,7 @@ const NavBar = () => {
 
     return (
         <div className="contMenu flex">
-            <div className="navBarContLogo flex"><img src="images/logo.png" alt="Logo Los Tobianos" className="navBarLogo" /></div>
+            <Link to="/"><div className="navBarContLogo flex"><img src="images/logo.png" alt="Logo Los Tobianos" className="navBarLogo" /></div></Link>
             {/* <div className="navBarTelefono flex"><span className="navBarTelefono549">+54 9 &nbsp;</span><span>11 40869822</span></div> */}
             <img className="iconoMenu" src="/images/menu.png" alt="Icono Menu" name="iconoMenu"/>
             <div className="tapaMenu"></div>

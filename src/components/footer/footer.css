@@ -39,11 +39,9 @@
 .footerContDer img {
     height: 2rem;
     margin-right: 0.5rem;
-    filter: grayscale(25%) contrast(120%) sepia(50%);
 }
 
 .footerContDer img:hover {
-    filter: unset;
     cursor: pointer;
 }
 
@@ -64,7 +62,8 @@
 .footerTextoContato {
     font-size: 1rem;
     font-weight: 200;
-    line-height: 1.75;
+    line-height: 2;
+    color: #cacaca;
 }
 
 .footerTituloContato {

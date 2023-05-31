@@ -1,6 +1,7 @@
 import React from 'react';
 import "./galeria.css";
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Galeria = () => {
 
@@ -32,7 +33,7 @@ const Galeria = () => {
   
     return (
         <div className='contSecciones seccionGaleria'>
-            <h2 className='titulosSecciones OoS'>Galería</h2>
+            <Link to="/galeria"><h2 className='titulosSecciones OoS'>Galería</h2></Link>
 
             {imageZoom}
 
