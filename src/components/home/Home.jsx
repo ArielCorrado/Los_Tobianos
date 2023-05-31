@@ -3,6 +3,8 @@ import Header from '../header/Header';
 import "./home.css"
 import Galeria from '../galeria/Galeria';
 import LosTobianos from '../losTobianos/LosTobianos';
+import Footer from '../footer/Footer';
+import Historia from '../historia/Historia';
 
 const Home = () => {
     return (
@@ -10,6 +12,8 @@ const Home = () => {
            <Header/>
            <LosTobianos/>
            <Galeria/>
+           <Historia/>
+           <Footer/>
         </div>
     );
 }

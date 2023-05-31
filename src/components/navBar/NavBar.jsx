@@ -120,11 +120,11 @@ const NavBar = () => {
             <img className="iconoMenu" src="/images/menu.png" alt="Icono Menu" name="iconoMenu"/>
             <div className="tapaMenu"></div>
             <div className="menu flex" name="menu">
-                <Link className="opcion flex" href="/">Home</Link>
-                <Link className="opcion flex" href="/">Galería</Link>
-                <Link className="opcion flex" href="/">Actividades</Link>
-                <Link className="opcion flex" href="/">Tarifas y reservas</Link>
-                <Link className="opcion flex" href="/">Contacto</Link>
+                <Link className="opcion flex" to="/">Home</Link>
+                <Link className="opcion flex" to="/galeria">Galería</Link>
+                <Link className="opcion flex" to="/">Actividades</Link>
+                <Link className="opcion flex" to="/">Tarifas y reservas</Link>
+                <Link className="opcion flex" to="/">Contacto</Link>
             </div>
         </div>
     )  

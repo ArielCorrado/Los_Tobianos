@@ -78,7 +78,7 @@ body {
 .OoSS {
     animation-name: OoS;
     animation-timing-function: linear;
-    animation-duration: 1s;
+    animation-duration: 0.75s;
     animation-fill-mode: forwards;
 }
 

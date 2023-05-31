@@ -36,3 +36,15 @@
     padding-left: 5vw;
     padding-right: 5vw;
 }
+
+.seccionesIndividuales {
+    padding-top: 3rem;
+}
+
+.botones {
+    padding: 0.35rem 1rem;
+}
+
+.botones:hover {
+    cursor: pointer;
+}

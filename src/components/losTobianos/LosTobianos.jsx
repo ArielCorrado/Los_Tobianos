@@ -29,7 +29,7 @@ const LosTobianos = () => {
                         </p> 
                     </div>
                     <div className='divImagenTobianos flex OoS'>
-                        <img className='imgTobianos' src="/images/los_tobianos_galeria_1.jpg" alt="Los Tobianos Imagen" />
+                        <img className='imgTobianos' src="/images/galeria/los_tobianos_galeria_1.jpg" alt="Los Tobianos Imagen" />
                     </div>
                 </div>
 
@@ -41,7 +41,7 @@ const LosTobianos = () => {
                         </p> 
                     </div>
                     <div className='divImagenTobianos flex OoS'>
-                        <img className='imgTobianos' src="/images/los_tobianos_galeria_10.jpg" alt="Los Tobianos Imagen" />
+                        <img className='imgTobianos' src="/images/galeria/los_tobianos_galeria_10.jpg" alt="Los Tobianos Imagen" />
                     </div>
                 </div>
 
@@ -53,7 +53,7 @@ const LosTobianos = () => {
                         </p> 
                     </div>
                     <div className='divImagenTobianos flex OoS'>
-                        <img className='imgTobianos' src="/images/los_tobianos_galeria_11.jpg" alt="Los Tobianos Imagen" />
+                        <img className='imgTobianos' src="/images/galeria/los_tobianos_galeria_11.jpg" alt="Los Tobianos Imagen" />
                     </div>
                 </div>
 
