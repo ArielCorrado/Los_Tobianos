@@ -32,7 +32,7 @@ const Galeria = () => {
     }, []);
   
     return (
-        <div className='contSecciones seccionGaleria'>
+        <div className='contSecciones seccionesIndividuales'>
             <Link to="/galeria"><h2 className='titulosSecciones OoS'>Galería</h2></Link>
 
             {imageZoom}

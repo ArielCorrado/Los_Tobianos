@@ -3,6 +3,7 @@ import NavBar from './components/navBar/NavBar';
 import Home from './components/home/Home';
 import "../src/components/generalStyles.css";
 import GaleriaSeccion from './components/galeriaSeccion/GaleriaSeccion';
+import ReservasSeccion from './components/reservasSeccion/Reservas';
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home/>} />
                     <Route path="/galeria" element={<GaleriaSeccion/>} />
+                    <Route path="/reservas" element={<ReservasSeccion/>} />
                 </Routes>
         </BrowserRouter>
     );

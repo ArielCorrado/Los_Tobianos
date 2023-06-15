@@ -1,0 +1,35 @@
+.seccionReservas {
+    background-color: #dcdad7
+}
+
+.titulosReservas {
+    color: #cf9246;
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+
+.subtitulosReservas {
+    font-size: 2.5rem;
+    color: #37455a;
+
+}
+
+.botonReservas {
+    background-color: #93855b;
+    color: white;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 2rem;
+    border: none;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.rayita {
+    background-color: #cf9246;
+    width: 7rem;
+    height: 0.2rem;
+}
+

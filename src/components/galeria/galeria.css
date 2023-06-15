@@ -2,11 +2,6 @@
     width: 100%;
 }
 
-.seccionGaleria {
-    padding-left: 1vw !important;
-    padding-right: 1vw !important;
-}
-
 .contImgGaleria {
     position: relative;
     width: 15rem;

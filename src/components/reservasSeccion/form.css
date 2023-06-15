@@ -1,0 +1,151 @@
+.contFormContacto {
+    width: 100%;
+    height: fit-content;
+    z-index: 100;
+    /* margin-right: 10vw;
+    margin-left: 10vw; */
+    padding: 7rem 0 5rem 0;
+}
+
+.tel-contacto, .email-contacto {
+    justify-content: flex-start;
+}
+
+.tel-contacto h2, .email-contacto h2{
+    color: var(--color-web-4);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.tel-contacto {
+    grid-area: contacto_tel;
+}
+
+.imgContactoPhone, .imgContactoEmail {
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.email-contacto {
+    grid-area: contacto_email;
+}
+
+.titulo-contacto {
+    color: #37455a;
+}
+
+.contTituloContacto {
+    grid-area: titulo;
+    padding: 2rem 0;
+}
+
+.form {
+    display: grid;
+    grid-template-areas: "titulo titulo" 
+                         "nombre telefono"
+                         "email empresa"
+                         "mensaje mensaje";
+    grid-gap: 0.75rem;
+    width: 45rem;
+    max-width: 90vw;
+}
+
+.form input, .form textarea {
+    padding: 0.5rem;
+    background-color: white;
+    border: none;
+    color: var(--color-web-2);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.form input::placeholder, .form textarea::placeholder {
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: 0.75rem;
+    opacity: 0.75;
+}
+
+.formNom {
+    grid-area: nombre;
+    min-height: 2.5rem;
+    width: 100%;
+}
+
+.formTel {
+    grid-area: telefono;
+    min-height: 2.5rem;
+    width: 100%;
+}
+
+.formEmail {
+    grid-area: email;
+    min-height: 2.5rem;
+    width: 100%;
+}
+
+.formEmpresa {
+    grid-area: empresa;
+    min-height: 2.5rem;
+    width: 100%;
+}
+
+.formMsj {
+    grid-area: mensaje;
+    height: 15rem;
+    width: 100%;
+}
+
+.contBotonContacto {
+    width: var(--ancho-form);
+    max-width: 90vw;
+}
+
+.boton-contacto {
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+.form input:focus, .form textarea:focus {
+    background-color: white;
+    outline: 0.2rem solid #cf9146c2;
+}
+
+.botonForm {
+    margin-bottom: 0;
+}
+
+
+@media only screen and (orientation:portrait) {
+
+    .divContacto { 
+        width: 50%;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    }    
+
+    .imgDivContacto {
+        object-position: 37.5% top;
+    }
+
+    .seccion-contacto {
+        justify-content: center;
+    }
+
+    .tel-contacto, .email-contacto {
+        justify-content: center;
+    }
+
+    .titulo-contacto {
+        margin-top: 4rem;
+    }
+
+    .form {
+        grid-template-areas: "contacto_tel contacto_tel"
+                             "contacto_email contacto_email"
+                             "titulo titulo" 
+                             "nombre telefono"
+                             "email empresa"
+                             "mensaje mensaje";
+    }
+
+}    

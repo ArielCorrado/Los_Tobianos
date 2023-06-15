@@ -123,7 +123,7 @@ const NavBar = () => {
                 <Link className="opcion flex" to="/">Home</Link>
                 <Link className="opcion flex" to="/galeria">Galería</Link>
                 <Link className="opcion flex" to="/">Actividades</Link>
-                <Link className="opcion flex" to="/">Tarifas y reservas</Link>
+                <Link className="opcion flex" to="/reservas">Tarifas y reservas</Link>
                 <Link className="opcion flex" to="/">Contacto</Link>
             </div>
         </div>

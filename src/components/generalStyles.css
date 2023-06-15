@@ -38,7 +38,9 @@
 }
 
 .seccionesIndividuales {
-    padding-top: 3rem;
+    padding-top: var(--alto-navbar);
+    padding-left: 1vw !important;
+    padding-right: 1vw !important;
 }
 
 .botones {

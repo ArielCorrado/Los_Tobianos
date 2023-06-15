@@ -33,7 +33,6 @@
 
 .footerContDer p{
     color: white;
-    border-bottom: 1px solid #3C3C3C;
 }
 
 .footerContDer img {
@@ -69,4 +68,32 @@
 .footerTituloContato {
     font-size: 1.50rem;
     margin-bottom: 1.5rem;
+}
+
+.footerDato {
+    margin-left: 1rem;
+}
+
+.footerTituloDato {
+    border-bottom: 1px solid #3C3C3C;
+}
+
+@media only screen and (orientation: portrait) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .footerContIzq {
+        justify-content: center;
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .footerMapa {
+        max-width: unset;
+        width: 100%;
+    }
 }
