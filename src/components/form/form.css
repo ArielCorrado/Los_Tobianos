@@ -4,7 +4,7 @@
     z-index: 100;
     /* margin-right: 10vw;
     margin-left: 10vw; */
-    padding: 7rem 0 5rem 0;
+    padding: 6rem 0 4rem 0;
 }
 
 .tel-contacto, .email-contacto {
@@ -31,6 +31,7 @@
 }
 
 .titulo-contacto {
+    font-size: 2rem;
     color: #37455a;
 }
 
@@ -101,6 +102,18 @@
     max-width: 90vw;
 }
 
+.botonForm {
+    background-color: #93855b;
+    color: white;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 2rem;
+    border: none;
+    margin-top: 5rem;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
 .boton-contacto {
     margin-top: 2rem;
     text-transform: uppercase;
@@ -110,11 +123,6 @@
     background-color: white;
     outline: 0.2rem solid #cf9146c2;
 }
-
-.botonForm {
-    margin-bottom: 0;
-}
-
 
 @media only screen and (orientation:portrait) {
 

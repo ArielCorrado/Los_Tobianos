@@ -33,7 +33,7 @@ const Galeria = () => {
   
     return (
         <div className='contSecciones seccionesIndividuales'>
-            <Link to="/galeria"><h2 className='titulosSecciones OoS'>Galería</h2></Link>
+            <Link to="/galeria"><h2 className='titulosSecciones titulosFadeIn OoS'>Galería</h2></Link>
 
             {imageZoom}
 

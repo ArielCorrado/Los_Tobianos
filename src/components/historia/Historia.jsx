@@ -7,7 +7,7 @@ const Historia = () => {
                 
     return (
         <div className='contSecciones'>
-            <h2 className='titulosSecciones OoS'>Historia</h2>
+            <h2 className='titulosSecciones titulosFadeIn OoS'>Historia</h2>
             <div className='historaTextoCont OoS'>
                 <div className='historiaTexto'>
                     <p className='OoS'>La Estancia "Los Tobianos" es un lugar lleno de historia y tradición ubicado al sur de la Provincia de Buenos Aires, en General Belgrano, a tan solo 18 km del pintoresco pueblo. Su nombre hace referencia al pelaje característico presente en varias razas de caballos, el cual exhibe marcas tipo pinto. A lo largo de los años, esta estancia ha sido testigo de diversos acontecimientos que han marcado su identidad y la de sus alrededores.</p> <br />

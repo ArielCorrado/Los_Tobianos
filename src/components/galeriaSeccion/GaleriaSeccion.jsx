@@ -34,7 +34,7 @@ const GaleriaSeccion = () => {
     return (
         <>
             <div className='contSecciones seccionGaleria seccionesIndividuales'>
-                <h2 className='titulosSecciones OoS'>Galería</h2>
+                <h2 className='titulosSecciones titulosFadeIn OoS'>Galería</h2>
 
                 {imageZoom}
 

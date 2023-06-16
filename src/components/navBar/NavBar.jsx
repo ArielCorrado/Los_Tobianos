@@ -14,7 +14,7 @@ const NavBar = () => {
             for (const element of elements) {                                       
                 if (element.getBoundingClientRect().top < window.innerHeight) {     
                     element.classList.add("OoSS");
-                    if (element.getAttribute("class").includes("titulosSecciones")) {
+                    if (element.getAttribute("class").includes("titulosFadeIn")) {
                         element.classList.add("fadeInTitulos");
                     }
                 };
@@ -25,7 +25,7 @@ const NavBar = () => {
                 if (element.getBoundingClientRect().top < window.innerHeight) { //Efecto opacity on scroll
                     element.classList.add("OoSS");
                     element.classList.add("OoSS");
-                    if (element.getAttribute("class").includes("titulosSecciones")) {
+                    if (element.getAttribute("class").includes("titulosFadeIn")) {
                         element.classList.add("fadeInTitulos");
                     }
                 };
@@ -122,9 +122,9 @@ const NavBar = () => {
             <div className="menu flex" name="menu">
                 <Link className="opcion flex" to="/">Home</Link>
                 <Link className="opcion flex" to="/galeria">Galería</Link>
-                <Link className="opcion flex" to="/">Actividades</Link>
+                <Link className="opcion flex" to="/actividades">Actividades</Link>
                 <Link className="opcion flex" to="/reservas">Tarifas y reservas</Link>
-                <Link className="opcion flex" to="/">Contacto</Link>
+                <Link className="opcion flex" to="/contacto">Contacto</Link>
             </div>
         </div>
     )  

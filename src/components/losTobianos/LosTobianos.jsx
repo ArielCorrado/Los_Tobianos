@@ -18,7 +18,7 @@ const LosTobianos = () => {
         
     return (
         <div className='contSecciones'>
-            <h2 className='titulosSecciones OoS'>Los Tobianos</h2>
+            <h2 className='titulosSecciones titulosFadeIn OoS'>Los Tobianos</h2>
             <div className='contTextoYfotosTobianos flex column'>
 
                 <div className='filaLosTobianos flex'>

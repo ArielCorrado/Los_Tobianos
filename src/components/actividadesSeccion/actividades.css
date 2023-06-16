@@ -1,0 +1,19 @@
+.seccionActividades {
+    background-color: #dcdad7;
+    min-height: 100vh;
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+}
+
+.actividadesTextos {
+    font-size: 1.5rem;
+    color: #37455a;
+}
+
+.actividadesTextosTitulo {
+    font-weight: 600;
+}
+
+.rayitaActividades {
+    margin: 3rem 0 3rem 0;
+}
