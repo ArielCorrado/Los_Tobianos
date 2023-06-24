@@ -45,7 +45,8 @@
     grid-template-areas: "titulo titulo" 
                          "nombre telefono"
                          "email empresa"
-                         "mensaje mensaje";
+                         "mensaje mensaje"
+                         "boton boton";
     grid-gap: 0.75rem;
     width: 45rem;
     max-width: 90vw;
@@ -100,6 +101,7 @@
 .contBotonContacto {
     width: var(--ancho-form);
     max-width: 90vw;
+    grid-area: boton;
 }
 
 .botonForm {
@@ -109,9 +111,10 @@
     width: 10rem;
     border-radius: 2rem;
     border: none;
-    margin-top: 5rem;
+    margin-top: 2.5rem;
     font-size: 1rem;
     font-weight: 200;
+    cursor: pointer;
 }
 
 .boton-contacto {
@@ -153,7 +156,8 @@
                              "titulo titulo" 
                              "nombre telefono"
                              "email empresa"
-                             "mensaje mensaje";
+                             "mensaje mensaje"
+                             "boton boton";
     }
 
 }    
