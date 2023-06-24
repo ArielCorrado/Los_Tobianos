@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/contacto.php": {
+    "/api/contacto.php": {
       "runtime": "vercel-php@0.6.0"
     }
   }
