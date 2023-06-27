@@ -25,7 +25,7 @@ const GaleriaSeccion = () => {
                 document.body.style.overflow = "hidden";
                 setImageZoom(<div className='contImgZoom flex' onClick={() => {setImageZoom(); document.body.style.overflow = "visible";}}>
                                 <img className='zoomGaleriaClose' src="/images/close.png" alt="Icono Close" />
-                                <img className='imgZoom' src={e.target.src} alt="Imagen Los Tobianos" /> 
+                                <img className='imgZoom' src={e.target.src.slice(0, -7) + ".jpg"} alt="Imagen Los Tobianos" /> 
                             </div>);
             })
         }
@@ -40,55 +40,55 @@ const GaleriaSeccion = () => {
 
                 <div className='galeria flex wrap'>
 
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_1.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_4.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_5.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_6.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_7.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_8.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_9.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_10.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_11.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_12.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_2.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_3.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_13.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_14.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_15.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_16.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_17.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_18.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_19.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_20.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_21.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_22.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_23.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_24.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_25.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_26.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_27.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_28.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_29.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_30.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_31.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_32.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_33.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_34.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_35.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_36.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_37.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_38.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_39.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_40.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_41.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_42.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_43.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_44.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_45.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_46.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_47.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_48.jpg" alt="Los Tobianos Galería" /></div>
-                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_49.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_1min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_4min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_5min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_6min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_7min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_8min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_9min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_10min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_11min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_12min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_2min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_3min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_13min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_14min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_15min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_16min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_17min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_18min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_19min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_20min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_21min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_22min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_23min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_24min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_25min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_26min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_27min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_28min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_29min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_30min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_31min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_32min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_33min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_34min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_35min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_36min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_37min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_38min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_39min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_40min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_41min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_42min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_43min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_44min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_45min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_46min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_47min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_48min.jpg" alt="Los Tobianos Galería" /></div>
+                    <div className='contImgGaleria OoS'><img className='imgGaleria' src="/images/galeria/los_tobianos_galeria_49min.jpg" alt="Los Tobianos Galería" /></div>
                 </div>
 
             </div>
