@@ -1,5 +1,6 @@
 import { useEffect} from "react";
 import { Link, useLocation } from 'react-router-dom';
+import { HashLink } from "react-router-hash-link";
 import "./navBar.css";
 
 const NavBar = () => {
@@ -33,7 +34,7 @@ const NavBar = () => {
         });
     }, [thisLocation]);    
 
-    /****************************************************************************************************************************************/
+    /*************************************************************** Menú ******************************************************************/
 
     
     useEffect(() => {
@@ -120,11 +121,11 @@ const NavBar = () => {
             <img className="iconoMenu" src="/images/menu.png" alt="Icono Menu" name="iconoMenu"/>
             <div className="tapaMenu"></div>
             <div className="menu flex" name="menu">
-                <Link className="opcion flex" to="/">Home</Link>
-                <Link className="opcion flex" to="/galeria">Galería</Link>
-                <Link className="opcion flex" to="/actividades">Actividades</Link>
-                <Link className="opcion flex" to="/reservas">Tarifas y reservas</Link>
-                <Link className="opcion flex" to="/contacto">Contacto</Link>
+                <HashLink className="opcion flex" to="/#top">Home</HashLink>
+                <HashLink className="opcion flex" to="/galeria#top">Galería</HashLink>
+                <HashLink className="opcion flex" to="/actividades#top">Actividades</HashLink>
+                <HashLink className="opcion flex" to="/reservas#top">Tarifas y reservas</HashLink>
+                <HashLink className="opcion flex" to="/contacto#top">Contacto</HashLink>
             </div>
         </div>
     )  
