@@ -2,8 +2,11 @@ import React from 'react';
 import "./galeriaSeccion.css";
 import { useEffect, useState } from 'react';
 import Footer from '../footer/Footer';
+import { useContext } from 'react';
+import { IdiomaContext } from "../../context/IdiomaContext";
 
 const GaleriaSeccion = () => {
+    const {isInglish} = useContext(IdiomaContext);
 
     const [imageZoom, setImageZoom] = useState();
 
@@ -34,7 +37,7 @@ const GaleriaSeccion = () => {
     return (
         <>
             <div className='contSecciones seccionGaleria seccionesIndividuales'>
-                <h2 className='titulosSecciones titulosFadeIn OoS'>Galería</h2>
+                <h2 className='titulosSecciones titulosFadeIn OoS'>{(isInglish && "Photo Gallery") || (!isInglish && "Galería")}</h2>
 
                 {imageZoom}
 

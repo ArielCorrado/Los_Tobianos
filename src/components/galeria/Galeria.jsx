@@ -1,9 +1,9 @@
 import React from 'react';
 import "./galeria.css";
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { IdiomaContext } from "../../context/IdiomaContext";
+import { HashLink } from 'react-router-hash-link';
 
 const Galeria = () => {
     const {isInglish} = useContext(IdiomaContext);
@@ -36,7 +36,7 @@ const Galeria = () => {
   
     return (
         <div className='contSecciones seccionesIndividuales'>
-            <Link to="/galeria"><h2 className='titulosSecciones titulosFadeIn OoS'>{(isInglish && "Photo Gallery") || (!isInglish && "Galería")}</h2></Link>
+            <HashLink to="/galeria#top"><h2 className='titulosSecciones titulosFadeIn OoS'>{(isInglish && "Photo Gallery") || (!isInglish && "Galería")}</h2></HashLink>
 
             {imageZoom}
 
