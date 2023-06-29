@@ -10,7 +10,7 @@ const NavBar = () => {
     /*************************************************************** OoS *******************************************************************/
     
     const thisLocation = useLocation();
-    const {isInglish, setSpanish, setInglish} = useContext(IdiomaContext);
+    const {isInglish, setSpanish, setEnglish} = useContext(IdiomaContext);
 
     useEffect(() => {
         const elements = document.getElementsByClassName("OoS");            //Para que al cargar la página se produzca el efecto de OoS (Opacity on Scroll) sin hacer scroll
@@ -121,13 +121,13 @@ const NavBar = () => {
 
         if (localStorage.getItem("isInglish")) {                            //Leemos el localstorage para cargar el idioma
             if (localStorage.getItem("isInglish") === "true") {                 
-                setInglish();
+                setEnglish();
             } else if (localStorage.getItem("isInglish") === "false") {
                 setSpanish();
             }    
         } else {
             if (navigator.language.includes("es")) setSpanish();
-            if (navigator.language.includes("en")) setInglish();
+            if (navigator.language.includes("en")) setEnglish();
         }
 
         // eslint-disable-next-line
@@ -138,7 +138,7 @@ const NavBar = () => {
             <div>
                 <div className="navBarContLogoEidioma flex">
                     <Link to="/" className="navBarContLogo"><img src="images/logo.png" alt="Logo Los Tobianos" className="navBarLogo" /></Link>
-                    {(isInglish && <p className="navBarIdiomaOpc" onClick={() => {setSpanish()}}>Spanish</p>) || (!isInglish && <p className="navBarIdiomaOpc" onClick={() => {setInglish()}}>English</p>)}
+                    {(isInglish && <p className="navBarIdiomaOpc" onClick={() => {setSpanish()}}>Spanish</p>) || (!isInglish && <p className="navBarIdiomaOpc" onClick={() => {setEnglish()}}>English</p>)}
                 </div>
             </div>
             {/* <div className="navBarTelefono flex"><span className="navBarTelefono549">+54 9 &nbsp;</span><span>11 40869822</span></div> */}

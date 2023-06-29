@@ -5,7 +5,7 @@ const IdiomaContext = createContext();
 const IdiomaProvider = ({children}) => {
     const [isInglish, setIsInglish] = useState(true);
 
-    const setInglish = () => {
+    const setEnglish = () => {
         setIsInglish(true);
         localStorage.setItem("isInglish", "true")
     }
@@ -16,7 +16,7 @@ const IdiomaProvider = ({children}) => {
     }
 
     return (      
-        <IdiomaContext.Provider value={{setSpanish, setInglish, isInglish}}>
+        <IdiomaContext.Provider value={{setSpanish, setEnglish, isInglish}}>
             {children}
         </IdiomaContext.Provider>
     );
