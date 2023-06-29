@@ -54,7 +54,7 @@
     color: var(--color-web-1);
 }
 
-.navBarContLogo {
+.navBarContLogoEidioma {
     position: absolute;
     height: 100%;
     left: 2rem;
@@ -68,6 +68,17 @@
     color: white;
     font-weight: 200;
     margin-left: 1rem;
+    cursor: pointer;
+}
+
+.navBarContLogo {
+    height: 90%;
+}
+
+.navBarLogo {
+    height: 100%;
+    width: 100%;
+    filter: invert(100%);
 }
 
 .iconoMenu {
@@ -82,12 +93,6 @@
     cursor: pointer;
     z-index: 270;
 }
-
-.navBarLogo {
-    height: 90%;
-    filter: invert(100%);
-}
-
 
 
 /******************************** Clases que se cargan dinamicamente desde el javascript del navbar al superar o bajar de ciertos REM ******************************************/

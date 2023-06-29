@@ -120,12 +120,12 @@ const NavBar = () => {
 
     return (
         <div className="contMenu flex">
-            <Link to="/">
-                <div className="navBarContLogo flex">
-                    <img src="images/logo.png" alt="Logo Los Tobianos" className="navBarLogo" />
+            <div>
+                <div className="navBarContLogoEidioma flex">
+                    <Link to="/" className="navBarContLogo"><img src="images/logo.png" alt="Logo Los Tobianos" className="navBarLogo" /></Link>
                     {(isInglish && <p className="navBarIdiomaOpc" onClick={() => {setSpanish()}}>Spanish</p>) || (!isInglish && <p className="navBarIdiomaOpc" onClick={() => {setInglish()}}>English</p>)}
                 </div>
-            </Link>
+            </div>
             {/* <div className="navBarTelefono flex"><span className="navBarTelefono549">+54 9 &nbsp;</span><span>11 40869822</span></div> */}
             <img className="iconoMenu" src="/images/menu.png" alt="Icono Menu" name="iconoMenu"/>
             <div className="tapaMenu"></div>
