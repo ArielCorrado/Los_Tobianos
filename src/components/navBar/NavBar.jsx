@@ -1,10 +1,12 @@
 import { useEffect} from "react";
 import { Link, useLocation } from 'react-router-dom';
 import { HashLink } from "react-router-hash-link";
+import { useContext } from 'react';
+import { IdiomaContext } from "../../context/IdiomaContext";
 import "./navBar.css";
 
 const NavBar = () => {
-
+    
     /*************************************************************** OoS *******************************************************************/
 
     const thisLocation = useLocation();
@@ -72,7 +74,7 @@ const NavBar = () => {
         const calcularREM = () => {
             if (window.innerWidth >= window.innerHeight) REM = 0.01 * window.innerHeight + 10;
             if (window.innerWidth < window.innerHeight) REM = 0.01 * window.innerWidth + 10;
-            breakPoint = 60 * REM;
+            breakPoint = 65 * REM;
         }
          
         calcularREM();
@@ -114,18 +116,25 @@ const NavBar = () => {
 
     }, []);    
 
+    const {isInglish, setSpanish, setInglish} = useContext(IdiomaContext);
+
     return (
         <div className="contMenu flex">
-            <Link to="/"><div className="navBarContLogo flex"><img src="images/logo.png" alt="Logo Los Tobianos" className="navBarLogo" /></div></Link>
+            <Link to="/">
+                <div className="navBarContLogo flex">
+                    <img src="images/logo.png" alt="Logo Los Tobianos" className="navBarLogo" />
+                    {(isInglish && <p className="navBarIdiomaOpc" onClick={() => {setSpanish()}}>Spanish</p>) || (!isInglish && <p className="navBarIdiomaOpc" onClick={() => {setInglish()}}>English</p>)}
+                </div>
+            </Link>
             {/* <div className="navBarTelefono flex"><span className="navBarTelefono549">+54 9 &nbsp;</span><span>11 40869822</span></div> */}
             <img className="iconoMenu" src="/images/menu.png" alt="Icono Menu" name="iconoMenu"/>
             <div className="tapaMenu"></div>
             <div className="menu flex" name="menu">
-                <HashLink className="opcion flex" to="/#top">Home</HashLink>
-                <HashLink className="opcion flex" to="/galeria#top">Galería</HashLink>
-                <HashLink className="opcion flex" to="/actividades#top">Actividades</HashLink>
-                <HashLink className="opcion flex" to="/reservas#top">Tarifas y reservas</HashLink>
-                <HashLink className="opcion flex" to="/contacto#top">Contacto</HashLink>
+                <HashLink className="opcion flex" to="/#top">{(isInglish && "Home") || (!isInglish && "Home")}</HashLink>
+                <HashLink className="opcion flex" to="/galeria#top">{(isInglish && "Photo Gallery") || (!isInglish && "Galería")}</HashLink>
+                <HashLink className="opcion flex" to="/actividades#top">{(isInglish && "Activities") || (!isInglish && "Actividades")}</HashLink>
+                <HashLink className="opcion flex" to="/reservas#top">{(isInglish && "Rates and Reservations") || (!isInglish && "Tarifas y Reservas")}</HashLink>
+                <HashLink className="opcion flex" to="/contacto#top">{(isInglish && "Contact Us") || (!isInglish && "Contacto")}</HashLink>
             </div>
         </div>
     )  

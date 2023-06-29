@@ -2,8 +2,11 @@ import React from 'react';
 import "./galeria.css";
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { IdiomaContext } from "../../context/IdiomaContext";
 
 const Galeria = () => {
+    const {isInglish} = useContext(IdiomaContext);
 
     const [imageZoom, setImageZoom] = useState();
 
@@ -33,7 +36,7 @@ const Galeria = () => {
   
     return (
         <div className='contSecciones seccionesIndividuales'>
-            <Link to="/galeria"><h2 className='titulosSecciones titulosFadeIn OoS'>Galería</h2></Link>
+            <Link to="/galeria"><h2 className='titulosSecciones titulosFadeIn OoS'>{(isInglish && "Photo Gallery") || (!isInglish && "Galería")}</h2></Link>
 
             {imageZoom}
 

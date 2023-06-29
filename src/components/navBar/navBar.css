@@ -64,6 +64,12 @@
     z-index: 270;
 }
 
+.navBarIdiomaOpc {
+    color: white;
+    font-weight: 200;
+    margin-left: 1rem;
+}
+
 .iconoMenu {
     position: absolute;
     height: 70%;
@@ -81,6 +87,7 @@
     height: 90%;
     filter: invert(100%);
 }
+
 
 
 /******************************** Clases que se cargan dinamicamente desde el javascript del navbar al superar o bajar de ciertos REM ******************************************/
