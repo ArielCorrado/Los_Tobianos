@@ -7,10 +7,12 @@ const IdiomaProvider = ({children}) => {
 
     const setInglish = () => {
         setIsInglish(true);
+        localStorage.setItem("isInglish", "true")
     }
 
     const setSpanish = () => {
         setIsInglish(false);
+        localStorage.setItem("isInglish", "false")
     }
 
     return (      

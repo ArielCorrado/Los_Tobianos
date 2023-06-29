@@ -114,6 +114,18 @@ const NavBar = () => {
             }
         })
 
+
+        /*************************************************************** Idioma ******************************************************************/
+
+        if (localStorage.getItem("isInglish")) {                            //Leemos el localstorage para cargar el idioma
+            if (localStorage.getItem("isInglish") === "true") {                 
+                setInglish();
+            } else if (localStorage.getItem("isInglish") === "false") {
+                setSpanish();
+            }    
+        }
+
+        // eslint-disable-next-line
     }, []);    
 
     const {isInglish, setSpanish, setInglish} = useContext(IdiomaContext);
