@@ -8,8 +8,9 @@ import "./navBar.css";
 const NavBar = () => {
     
     /*************************************************************** OoS *******************************************************************/
-
+    
     const thisLocation = useLocation();
+    const {isInglish, setSpanish, setInglish} = useContext(IdiomaContext);
 
     useEffect(() => {
         const elements = document.getElementsByClassName("OoS");            //Para que al cargar la página se produzca el efecto de OoS (Opacity on Scroll) sin hacer scroll
@@ -40,6 +41,7 @@ const NavBar = () => {
 
     
     useEffect(() => {
+
         const iconoMenu = document.querySelector(".iconoMenu");
         const menu = document.querySelector(".menu");
         const opciones = document.getElementsByClassName("opcion");
@@ -74,7 +76,7 @@ const NavBar = () => {
         const calcularREM = () => {
             if (window.innerWidth >= window.innerHeight) REM = 0.01 * window.innerHeight + 10;
             if (window.innerWidth < window.innerHeight) REM = 0.01 * window.innerWidth + 10;
-            breakPoint = 65 * REM;
+            breakPoint = 70 * REM;
         }
          
         calcularREM();
@@ -123,13 +125,14 @@ const NavBar = () => {
             } else if (localStorage.getItem("isInglish") === "false") {
                 setSpanish();
             }    
+        } else {
+            if (navigator.language.includes("es")) setSpanish();
+            if (navigator.language.includes("en")) setInglish();
         }
 
         // eslint-disable-next-line
     }, []);    
-
-    const {isInglish, setSpanish, setInglish} = useContext(IdiomaContext);
-
+    
     return (
         <div className="contMenu flex">
             <div>
