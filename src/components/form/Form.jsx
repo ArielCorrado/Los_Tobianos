@@ -20,7 +20,7 @@ const Form = () => {
         if (datos.nombre.trim() === "" || datos.apellido.trim() === "" || datos.telefono.trim() === "" || datos.email.trim() === "" || datos.mensaje.trim() === "") {
             Swal.fire({
                 title: "Ops!",
-                text: "Falta ingresar algún dato",
+                text: (isInglish && "Missing to enter some data") || (!isInglish && "Falta ingresar algún dato"),
                 icon: 'error',
                 confirmButtonColor: '#93855b',
                 confirmButtonText: 'OK'
@@ -40,18 +40,20 @@ const Form = () => {
             
         if (respOBJ.success) {
             Swal.fire({
-                title: `${respOBJ.msg}`,
+                title: (isInglish && "Message sent succesfully") || (!isInglish && "Mensaje enviado con éxito"),
                 icon: 'success',
                 confirmButtonColor: '#93855b',
-                confirmButtonText: 'Home'
+                confirmButtonText: (isInglish && "Home") || (!isInglish && "Inicio")
             }).then((result) => {
                 if (result.isConfirmed) {
-                    navigate("/")
+                    navigate("/");
+                } else {
+                    window.location.reload();
                 }
             })
         } else {
             Swal.fire({
-                title: "Error al enviar el mensaje",
+                title: (isInglish && "Error sending message") || (!isInglish && "Error al enviar el mensaje"),
                 text: `${respOBJ.msg}`,
                 icon: 'error',
                 confirmButtonColor: '#93855b',
