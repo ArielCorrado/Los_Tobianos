@@ -16,7 +16,12 @@ const Footer = () => {
                     <div className='footerLineaDatos flex'><p className='footerTituloContato footerTituloDato'>{(isInglish && "Contact Us") || (!isInglish && "Contacto")}</p> </div>
                     <div className='footerLineaDatos flex'><p className='footerTextoContato footerTituloDato'>{(isInglish && "How to get") || (!isInglish && "Como llegar")}</p> </div>
                     <div className='footerLineaDatos flex'><p className='footerTextoContato footerTituloDato'>{(isInglish && "Phone:") || (!isInglish && "Teléfono:")}</p> </div>
-                    <div className='footerLineaDatos flex'><p className='footerTextoContato footerTituloDato'>e-mail:</p><a href="mailto:info@estancialostobianos.com.ar"><p className='footerTextoContato footerDato'>info@estancialostobianos.com.ar</p></a></div>
+                    <div className='footerLineaDatos flex'>
+                        <p className='footerTextoContato footerTituloDato'>e-mail:</p>
+                        <a href="mailto:info@estancialostobianos.com.ar">
+                            <p className='footerTextoContato footerDato'>info@estancialostobianos.com.ar</p>
+                        </a>
+                    </div>
                     <div className='footerImgCont flex'>
                         <a href="https://www.instagram.com/estancialostobianos/" target='_blank' rel="noreferrer"><img src="/images/instagram.png" alt="Instagram Icon" /></a>
                         <img src="/images/whatsapp.png" alt="whatsapp Icon" />
