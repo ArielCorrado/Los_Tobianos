@@ -7,13 +7,26 @@ import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const Form = () => {
+
     const {isInglish} = useContext(IdiomaContext);
     const navigate = useNavigate();
 
     const sendForm = async () => {
+        
         const form = document.querySelector(".form");
         const formdatos = new FormData(form);
         const datos = Object.fromEntries(formdatos);
+
+        if (datos.nombre.trim() === "" || datos.apellido.trim() === "" || datos.telefono.trim() === "" || datos.email.trim() === "" || datos.mensaje.trim() === "") {
+            Swal.fire({
+                title: "Ops!",
+                text: "Falta ingresar algún dato",
+                icon: 'error',
+                confirmButtonColor: '#93855b',
+                confirmButtonText: 'OK'
+            });
+            return;
+        }
 
         const resp = await fetch(process.env.REACT_APP_URL_API, {
             method: "POST",
