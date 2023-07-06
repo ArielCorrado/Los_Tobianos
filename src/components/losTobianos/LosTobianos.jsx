@@ -30,7 +30,7 @@ const LosTobianos = () => {
                             {(isInglish 
                             && 
                             <> 
-                                At Los Tobianos, we offer you an exclusive lodging experience in a unique place located in General Belgrano, in the northern part of the Buenos Aires Province, just 120 km away from the Autonomous City of Buenos Aires. <br /><br />
+                                At Los Tobianos, we offer you an exclusive lodging experience in a unique place located in General Belgrano, in the southeast part of the Buenos Aires Province, just 120 km away from the Autonomous City of Buenos Aires. <br /><br />
                                 Our space features a main house with colonial-era architecture and modern additions, with bright and cozy rooms equipped with fireplaces to create a warm ambiance during cooler nights.
                             </>
                             ) 
@@ -38,7 +38,7 @@ const LosTobianos = () => {
                             (!isInglish 
                             && 
                             <>
-                                En Los Tobianos, te ofrecemos una experiencia de hospedaje exclusivo en un lugar único, ubicado en General Belgrano, al norte de la Provincia de Buenos Aires, a solo 120 km de la Ciudad Autónoma de Buenos Aires. <br /><br />
+                                En Los Tobianos, te ofrecemos una experiencia de hospedaje exclusivo en un lugar único, ubicado en General Belgrano, al sur de la Provincia de Buenos Aires, a solo 120 km de la Ciudad Autónoma de Buenos Aires. <br /><br />
                                 Nuestro espacio cuenta con un casco principal de arquitectura colonial de época y adiciones modernas, con habitaciones luminosas y acogedoras, equipadas con chimeneas para crear un ambiente cálido en las noches más frescas.
                             </>
                             )}             

@@ -61,6 +61,16 @@ const Actividades = () => {
                     }     
                 </p>
                 <div className='rayita rayitaActividades OoS'></div>
+
+                <p className='actividadesTextos OoS'>
+                    <span className='actividadesTextosTitulo'>{(isInglish && "Horseback Riding:") || (!isInglish && "Cabalgatas:")}</span>
+                    { 
+                      (isInglish && <>In addition to hiking and walking, another popular activity in the area of General Belgrano is horseback riding. The region's natural landscapes and green areas make it an ideal destination for equestrian enthusiasts. Visitors can embark on horseback riding adventures, exploring the area's diverse trails and paths while enjoying panoramic views of the region. Whether you're a seasoned rider or a beginner, horseback riding in General Belgrano offers a unique and immersive experience in nature.</>)
+                      ||  
+                      (!isInglish && <>Además de hacer senderismo y caminar, otra actividad popular en la zona de General Belgrano son las cabalgatas. Los paisajes naturales y las áreas verdes de la región la convierten en un destino ideal para los entusiastas de las cabalgatas. Los visitantes pueden embarcarse en emocionantes paseos a caballo, explorando los diversos senderos y caminos de la zona mientras disfrutan de vistas panorámicas de la región. Ya seas un jinete experimentado o un principiante, las cabalgatas en General Belgrano ofrecen una experiencia única e inmersiva en la naturaleza.</>)
+                    }     
+                </p>
+                <div className='rayita rayitaActividades OoS'></div>
             </div>
             <Footer/>
         </>
